@@ -1,11 +1,346 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Domain registration & web hosting</title>
-</head>
-<body>
-    <h1>Domain registration & web hosting</h1>
-  <p>Succesfully registered a domain name, selected a hosting provider(Github pages) and uploaded the content to create this availabe webpage.</p>
-  <p>good bye!</p>
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Sebastian Para – TalTech Cybersecurity Engineering student portfolio: bio, skills, projects, and contact information.">
+        <meta name="author" content="Tooplate">
+
+        <title>TalTech Student</title>
+        <meta property="og:title" content="Sebastian Para • TalTech Student">
+        <meta property="og:description" content="Sebastian Para – TalTech Cybersecurity Engineering student portfolio: bio, skills, projects, and contact information.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="images/sebastian-avatar.jpg">
+
+        <!-- CSS FILES -->      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/apexcharts.css" rel="stylesheet">
+
+        <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+        <link rel="icon" href="images/sebastian-avatar.jpg">
+<!--
+
+Tooplate 2135 Mini Finance
+
+https://www.tooplate.com/view/2135-mini-finance
+
+Bootstrap 5 Dashboard Admin Template
+
+-->
+
+    <style>
+        html { scroll-behavior: smooth; }
+        body { position: relative; }
+    </style>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-offset="100" tabindex="0">
+        <header class="navbar sticky-top flex-md-nowrap">
+            <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi-box"></i>
+                    TalTech Student
+                </a>
+            </div>
+
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#" method="get" role="form">
+                <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+            </form>
+
+            <div class="navbar-nav me-lg-2">
+                <div class="nav-item text-nowrap d-flex align-items-center">
+                    <div class="dropdown ps-3">
+                        <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarLightDropdownMenuLink">
+                            <i class="bi-bell"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-lg-end notifications-block-wrap bg-white shadow" aria-labelledby="navbarLightDropdownMenuLink">
+                            <small>Notifications</small>
+
+                            <li class="px-3 py-2 text-muted">No notifications</li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown ps-1">
+                        <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi-three-dots-vertical"></i>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-social bg-white shadow">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a class="dropdown-item text-center" href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener">
+                                            <i class="bi-linkedin fs-3 d-block"></i>
+                                            <span class="d-block">LinkedIn</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <a class="dropdown-item text-center" href="https://github.com/sebasp-9" target="_blank" rel="noopener">
+                                            <i class="bi-github fs-3 d-block"></i>
+                                            <span class="d-block">GitHub</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown px-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/sebastian-avatar.jpg" class="profile-image img-fluid" alt="">
+                        </a>
+                        <ul class="dropdown-menu bg-white shadow">
+                            <li>
+                                <div class="dropdown-menu-profile-thumb d-flex">
+                                    <img src="images/sebastian-avatar.jpg" class="profile-image img-fluid me-3" alt="">
+
+                                    <div class="d-flex flex-column">
+                                        <small>Sebastian</small>
+                                        <a href="#">sebastian@example.com</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="bi-person me-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="setting.html">
+                                    <i class="bi-gear me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="help-center.html">
+                                    <i class="bi-question-circle me-2"></i>
+                                    Help
+                                </a>
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="topNav" class="navbar navbar-expand bg-white border-bottom">
+            <div class="container-fluid px-3">
+                <ul class="navbar-nav me-auto mb-0 gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="d-none">
+                    <div class="position-sticky py-4 px-3 sidebar-sticky">
+                        <ul class="nav flex-column h-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">
+                                    <i class="bi-house-fill me-2"></i>
+                                    Overview
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">
+                                    <i class="bi-wallet me-2"></i>
+                                    Contact
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">
+                                    <i class="bi-person me-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="setting.html">
+                                    <i class="bi-gear me-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="help-center.html">
+                                    <i class="bi-question-circle me-2"></i>
+                                    Help Center
+                                </a>
+                            </li>
+
+                            
+
+                            
+                        </ul>
+                    </div>
+                </nav>
+
+                <main class="main-wrapper col-12 py-4 px-md-4">
+                    <div id="home" class="mb-4">
+                        <div class="mb-4">
+                            <h1 class="display-5 mb-2">Sebastian Para</h1>
+                            <p class="lead mb-2">I’m a Cybersecurity Engineering student at <a href="https://taltech.ee/en/" target="_blank" rel="noopener">TalTech</a>, currently building a strong foundation across core IT disciplines. I’m learning networking through CCNA-level material, studying C programming, and improving my academic writing so I can document and communicate technical work clearly.</p>
+                            <p class="mb-3">On the practical side, I work with virtual machines, Wireshark, Kali Linux, Hack The Box and other introductory cybersecurity tools to understand how systems operate, how attacks happen, and how to defend them. I’m early in my journey, but I’m consistent, curious, and moving fast.</p>
+                            <a href="contact.html" class="btn btn-primary d-inline-flex align-items-center">
+                                <i class="bi-link-45deg me-2"></i>
+                                Contact me
+                            </a>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="custom-block custom-block-profile-front custom-block-profile text-center bg-white">
+                                <div class="custom-block-profile-image-wrap mb-4">
+                                    <img src="images/sebastian-avatar.jpg" class="custom-block-profile-image img-fluid" alt="">
+
+                                </div>
+                                <p class="mb-2"><strong>Name:</strong> <span>Sebastian Para</span></p>
+                                <p class="mb-0"><strong>Email:</strong> <a href="#">sebastian@example.com</a></p>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div id="skills" class="row my-4">
+                        <div class="col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-3">Skills & Tools</h5>
+                                <div class="row g-2">
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-primary w-100 py-2">Networking / CCNA</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-dark w-100 py-2">C programming</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-secondary w-100 py-2">Linux</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-info text-dark w-100 py-2">Virtual Machines</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-success w-100 py-2">Cybersecurity tools</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-warning text-dark w-100 py-2">Academic writing</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-3">What I’m Learning Now</h5>
+                                <ul class="mb-0">
+                                    <li>CCNA networking fundamentals</li>
+                                    <li>C programming basics</li>
+                                    <li>Academic writing</li>
+                                    <li>Building cybersecurity labs</li>
+                                    <li>Personal projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="projects" class="row my-4">
+                        <div class="col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-3">Projects</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Packet Tracer Lab</h6>
+                                                <p class="card-text text-muted">Coming soon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h6 class="card-title">C Programming Project</h6>
+                                                <p class="card-text text-muted">Coming soon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h6 class="card-title">GitHub Website</h6>
+                                                <p class="card-text text-muted">Coming soon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contacts" class="row my-4">
+                        <div class="col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-3">Contacts</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <p class="mb-1"><strong>Email:</strong> <a href="mailto:sebastian@example.com">sebastian@example.com</a></p>
+                                        <p class="mb-1"><strong>GitHub:</strong> <a href="https://github.com/sebasp-9" target="_blank" rel="noopener">github.com/sebasp-9</a></p>
+                                        <p class="mb-0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener">linkedin.com/in/sebastianparra0</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <form action="#" method="post" class>
+                                            <div class="mb-2">
+                                                <input type="text" class="form-control" placeholder="Your name">
+                                            </div>
+                                            <div class="mb-2">
+                                                <input type="email" class="form-control" placeholder="Your email">
+                                            </div>
+                                            <div class="mb-2">
+                                                <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-outline-primary">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-lg-12 col-12">
+                                    <p class="copyright-text">© Sebastian Para</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </footer>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+        <script src="scripts/custom.js"></script>
+
+    </body>
 </html>
