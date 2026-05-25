@@ -32,7 +32,7 @@
     function clearHighlights(root) {
       $(root).find('span.search-highlight').each(function () {
         var $span = $(this);
-        $span.replaceWith($span.text());
+        $span.replaceWith(document.createTextNode($span.text()));
       });
     }
 
@@ -42,18 +42,33 @@
 
     function highlightInElement(element, query) {
       if (!query) return 0;
-      var regex = new RegExp('(' + escapeRegExp(query) + ')', 'gi');
+      var regex = new RegExp(escapeRegExp(query), 'gi');
       var count = 0;
 
       $(element).contents().each(function () {
         if (this.nodeType === 3) { // text node
           var text = this.nodeValue;
           if (!text) return;
-          if (regex.test(text)) {
-            var newHtml = text.replace(regex, '<span class="search-highlight">$1</span>');
-            $(this).replaceWith(newHtml);
-            count++;
+          if (!regex.test(text)) return;
+          regex.lastIndex = 0;
+
+          var fragment = document.createDocumentFragment();
+          var lastIndex = 0;
+          text.replace(regex, function (match, offset) {
+            if (offset > lastIndex) {
+              fragment.appendChild(document.createTextNode(text.slice(lastIndex, offset)));
+            }
+            var highlight = document.createElement('span');
+            highlight.className = 'search-highlight';
+            highlight.textContent = match;
+            fragment.appendChild(highlight);
+            lastIndex = offset + match.length;
+          });
+          if (lastIndex < text.length) {
+            fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
           }
+          $(this).replaceWith(fragment);
+          count++;
         } else if (this.nodeType === 1) { // element node
           var tag = this.nodeName.toLowerCase();
           if (['script','style','noscript','iframe'].indexOf(tag) !== -1) return;
