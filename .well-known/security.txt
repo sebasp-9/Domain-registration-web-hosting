@@ -1,0 +1,5 @@
+Contact: https://www.linkedin.com/in/sebastianparra0
+Contact: https://github.com/sebasp-9
+Preferred-Languages: en, et, es
+Canonical: https://sebastech.me/.well-known/security.txt
+Expires: 2027-06-14T00:00:00Z

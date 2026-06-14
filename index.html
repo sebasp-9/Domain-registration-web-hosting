@@ -4,336 +4,294 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Sebastian Para – TalTech Cybersecurity Engineering student portfolio: bio, skills, projects, and contact information.">
-        <meta name="author" content="Tooplate">
+        <meta name="description" content="Sebastian Para — Cybersecurity Engineering student at TalTech. Portfolio with live GitHub projects, a live cybersecurity news feed, skills and contact.">
+        <meta name="author" content="Sebastian Para">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://api.github.com https://api.rss2json.com https://api.allorigins.win; font-src 'self' https://fonts.gstatic.com data:; form-action https://formspree.io; img-src 'self' https://avatars.githubusercontent.com data:; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; base-uri 'self'; upgrade-insecure-requests">
 
-        <title>TalTech Student</title>
-        <meta property="og:title" content="Sebastian Para • TalTech Student">
-        <meta property="og:description" content="Sebastian Para – TalTech Cybersecurity Engineering student portfolio: bio, skills, projects, and contact information.">
+        <title>Sebastian Para — Cybersecurity Portfolio</title>
+        <meta property="og:title" content="Sebastian Para • Cybersecurity Portfolio">
+        <meta property="og:description" content="Cybersecurity Engineering student at TalTech. Live GitHub projects, security news feed, skills and contact.">
         <meta property="og:type" content="website">
+        <meta property="og:url" content="https://sebastech.me">
         <meta property="og:image" content="images/sebastian-avatar.jpg">
+        <meta name="theme-color" content="#0a0e14">
 
-        <!-- CSS FILES -->      
+        <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/apexcharts.css" rel="stylesheet">
-
         <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+        <link href="css/cyber-theme.css" rel="stylesheet">
         <link rel="icon" href="images/sebastian-avatar.jpg">
-<!--
 
-Tooplate 2135 Mini Finance
-
-https://www.tooplate.com/view/2135-mini-finance
-
-Bootstrap 5 Dashboard Admin Template
-
--->
-
-    <style>
-        html { scroll-behavior: smooth; }
-        body { position: relative; }
-    </style>
+        <style>
+            html { scroll-behavior: smooth; }
+            body { position: relative; }
+            #about, #skills, #security, #projects, #news, #contacts { scroll-margin-top: 110px; }
+        </style>
     </head>
-    <body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-offset="100" tabindex="0">
+    <body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-offset="120" tabindex="0">
         <header class="navbar sticky-top flex-md-nowrap">
             <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
                 <a class="navbar-brand" href="index.html">
-                    <i class="bi-box"></i>
-                    TalTech Student
+                    <i class="bi-shield-lock-fill"></i>
+                    Sebastian Para
                 </a>
             </div>
 
-            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#" method="get" role="form">
-                <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+                <input class="form-control" name="search" type="text" placeholder="Search this page…" aria-label="Search">
             </form>
 
-            <div class="navbar-nav me-lg-2">
-                <div class="nav-item text-nowrap d-flex align-items-center">
-                    <div class="dropdown ps-3">
-                        <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarLightDropdownMenuLink">
-                            <i class="bi-bell"></i>
-                        </a>
-
-                        <ul class="dropdown-menu dropdown-menu-lg-end notifications-block-wrap bg-white shadow" aria-labelledby="navbarLightDropdownMenuLink">
-                            <small>Notifications</small>
-
-                            <li class="px-3 py-2 text-muted">No notifications</li>
-                        </ul>
-                    </div>
-
-                    <div class="dropdown ps-1">
-                        <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi-three-dots-vertical"></i>
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-social bg-white shadow">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a class="dropdown-item text-center" href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener">
-                                            <i class="bi-linkedin fs-3 d-block"></i>
-                                            <span class="d-block">LinkedIn</span>
-                                        </a>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <a class="dropdown-item text-center" href="https://github.com/sebasp-9" target="_blank" rel="noopener">
-                                            <i class="bi-github fs-3 d-block"></i>
-                                            <span class="d-block">GitHub</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown px-3">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="images/sebastian-avatar.jpg" class="profile-image img-fluid" alt="">
-                        </a>
-                        <ul class="dropdown-menu bg-white shadow">
-                            <li>
-                                <div class="dropdown-menu-profile-thumb d-flex">
-                                    <img src="images/sebastian-avatar.jpg" class="profile-image img-fluid me-3" alt="">
-
-                                    <div class="d-flex flex-column">
-                                        <small>Sebastian</small>
-                                        <a href="#">sebastian@example.com</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="profile.html">
-                                    <i class="bi-person me-2"></i>
-                                    Profile
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="setting.html">
-                                    <i class="bi-gear me-2"></i>
-                                    Settings
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="help-center.html">
-                                    <i class="bi-question-circle me-2"></i>
-                                    Help
-                                </a>
-                            </li>
-
-                            
-                        </ul>
-                    </div>
-                </div>
+            <div class="header-actions d-flex align-items-center pe-3">
+                <a href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/sebasp-9" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                    <i class="bi-github"></i>
+                </a>
+                <a href="#about" class="avatar" title="Sebastian Para" aria-label="Top of page">
+                    <img src="images/sebastian-avatar.jpg" alt="Sebastian Para">
+                </a>
             </div>
         </header>
 
         <nav id="topNav" class="navbar navbar-expand bg-white border-bottom">
             <div class="container-fluid px-3">
                 <ul class="navbar-nav me-auto mb-0 gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#security">Security</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">Security News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="container-fluid">
             <div class="row">
-                <nav id="sidebarMenu" class="d-none">
-                    <div class="position-sticky py-4 px-3 sidebar-sticky">
-                        <ul class="nav flex-column h-100">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">
-                                    <i class="bi-house-fill me-2"></i>
-                                    Overview
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
-                                    <i class="bi-wallet me-2"></i>
-                                    Contact
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="profile.html">
-                                    <i class="bi-person me-2"></i>
-                                    Profile
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="setting.html">
-                                    <i class="bi-gear me-2"></i>
-                                    Settings
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="help-center.html">
-                                    <i class="bi-question-circle me-2"></i>
-                                    Help Center
-                                </a>
-                            </li>
-
-                            
-
-                            
-                        </ul>
-                    </div>
-                </nav>
-
                 <main class="main-wrapper col-12 py-4 px-md-4">
-                    <div id="home" class="mb-4">
-                        <div class="mb-4">
-                            <h1 class="display-5 mb-2">Sebastian Para</h1>
-                            <p class="lead mb-2">I’m a Cybersecurity Engineering student at <a href="https://taltech.ee/en/" target="_blank" rel="noopener">TalTech</a>, currently building a strong foundation across core IT disciplines. I’m learning networking through CCNA-level material, studying C programming, and improving my academic writing so I can document and communicate technical work clearly.</p>
-                            <p class="mb-3">On the practical side, I work with virtual machines, Wireshark, Kali Linux, Hack The Box and other introductory cybersecurity tools to understand how systems operate, how attacks happen, and how to defend them. I’m early in my journey, but I’m consistent, curious, and moving fast.</p>
-                            <a href="contact.html" class="btn btn-primary d-inline-flex align-items-center">
-                                <i class="bi-link-45deg me-2"></i>
-                                Contact me
-                            </a>
+
+                    <!-- ABOUT / HERO -->
+                    <section id="about" class="row align-items-center my-4 g-4">
+                        <div class="col-lg-7 col-12">
+                            <p class="hero-prompt mb-2"><span class="path">visitor@sebastech.me</span>:~$ whoami</p>
+                            <h1 class="display-4 mb-2">I'm <span class="hero-name">Sebastian Para</span><span class="term-cursor"></span></h1>
+                            <p class="lead mb-3">
+                                Cybersecurity Engineering student at
+                                <a href="https://taltech.ee/en/" target="_blank" rel="noopener">TalTech</a>,
+                                building a strong foundation across networking, systems and security.
+                            </p>
+                            <p class="mb-4">
+                                I'm working through CCNA-level networking, learning C, and getting hands-on with
+                                virtual machines, Wireshark, Kali Linux and Hack The Box to understand how systems
+                                work, how attacks happen, and how to defend against them. Early in the journey —
+                                consistent, curious, and building in public.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#projects" class="btn btn-primary d-inline-flex align-items-center">
+                                    <i class="bi-folder2-open me-2"></i> View projects
+                                </a>
+                                <a href="https://github.com/sebasp-9" target="_blank" rel="noopener" class="btn btn-dark d-inline-flex align-items-center">
+                                    <i class="bi-github me-2"></i> GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener" class="btn btn-dark d-inline-flex align-items-center">
+                                    <i class="bi-linkedin me-2"></i> LinkedIn
+                                </a>
+                            </div>
                         </div>
 
                         <div class="col-lg-5 col-12">
-                            <div class="custom-block custom-block-profile-front custom-block-profile text-center bg-white">
-                                <div class="custom-block-profile-image-wrap mb-4">
-                                    <img src="images/sebastian-avatar.jpg" class="custom-block-profile-image img-fluid" alt="">
-
+                            <div class="custom-block text-center">
+                                <div class="avatar-ring mx-auto mb-4" style="max-width: 160px;">
+                                    <img src="images/sebastian-avatar.jpg" alt="Sebastian Para">
                                 </div>
-                                <p class="mb-2"><strong>Name:</strong> <span>Sebastian Para</span></p>
-                                <p class="mb-0"><strong>Email:</strong> <a href="#">sebastian@example.com</a></p>
+                                <p class="hero-prompt mb-2" style="font-size:.85rem;">cat status.txt</p>
+                                <p class="mb-1"><strong>Role:</strong> Cybersecurity Engineering Student</p>
+                                <p class="mb-1"><strong>School:</strong> TalTech (Tallinn, Estonia)</p>
+                                <p class="mb-1"><strong>GitHub:</strong> 3 public repositories, updated June 14, 2026</p>
+                                <p class="mb-0"><strong>Focus:</strong> Networking · Linux · Intrusion Detection · Defensive Security</p>
                             </div>
-
-                            
                         </div>
-                    </div>
+                    </section>
 
-                    <div id="skills" class="row my-4">
+                    <!-- SKILLS -->
+                    <section id="skills" class="row my-4">
                         <div class="col-12">
-                            <div class="custom-block bg-white">
-                                <h5 class="mb-3">Skills & Tools</h5>
+                            <div class="custom-block">
+                                <span class="section-eyebrow">skills &amp; tools</span>
+                                <h5 class="mb-3">What I work with</h5>
                                 <div class="row g-2">
-                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-primary w-100 py-2">Networking / CCNA</span></div>
-                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-dark w-100 py-2">C programming</span></div>
-                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-secondary w-100 py-2">Linux</span></div>
-                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-info text-dark w-100 py-2">Virtual Machines</span></div>
-                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-success w-100 py-2">Cybersecurity tools</span></div>
-                                    <div class="col-6 col-md-4 col-lg-3"><span class="badge bg-warning text-dark w-100 py-2">Academic writing</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-diagram-3"></i> Networking / CCNA</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-code-slash"></i> C Programming</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-terminal"></i> Linux</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-bug"></i> Kali / Pentesting</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-activity"></i> Wireshark</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-hdd-stack"></i> Virtual Machines</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-database-check"></i> NSL-KDD / IDS</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-key"></i> Cryptanalysis Basics</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-shield-lock"></i> Hack The Box</span></div>
+                                    <div class="col-6 col-md-4 col-lg-3"><span class="skill-chip"><i class="bi-git"></i> Git / GitHub</span></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row my-4">
                         <div class="col-12">
-                            <div class="custom-block bg-white">
-                                <h5 class="mb-3">What I’m Learning Now</h5>
-                                <ul class="mb-0">
-                                    <li>CCNA networking fundamentals</li>
-                                    <li>C programming basics</li>
-                                    <li>Academic writing</li>
-                                    <li>Building cybersecurity labs</li>
-                                    <li>Personal projects</li>
-                                </ul>
+                            <div class="custom-block">
+                                <span class="section-eyebrow">in progress</span>
+                                <h5 class="mb-3">Currently learning</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6"><p class="mb-0"><i class="bi-check2-circle me-2" style="color:var(--accent)"></i>CCNA networking fundamentals</p></div>
+                                    <div class="col-md-6"><p class="mb-0"><i class="bi-check2-circle me-2" style="color:var(--accent)"></i>C programming &amp; data structures</p></div>
+                                    <div class="col-md-6"><p class="mb-0"><i class="bi-check2-circle me-2" style="color:var(--accent)"></i>Building home cybersecurity labs</p></div>
+                                    <div class="col-md-6"><p class="mb-0"><i class="bi-check2-circle me-2" style="color:var(--accent)"></i>Hack The Box &amp; CTF practice</p></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div id="projects" class="row my-4">
+                    <!-- SECURITY POSTURE -->
+                    <section id="security" class="row my-4">
                         <div class="col-12">
-                            <div class="custom-block bg-white">
-                                <h5 class="mb-3">Projects</h5>
+                            <div class="custom-block">
+                                <span class="section-eyebrow">security posture</span>
+                                <h5 class="mb-3">How this site is built</h5>
                                 <div class="row g-3">
                                     <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h6 class="card-title">Packet Tracer Lab</h6>
-                                                <p class="card-text text-muted">Coming soon</p>
-                                            </div>
+                                        <div class="signal-card">
+                                            <i class="bi-hdd-network"></i>
+                                            <h6>Static hosting</h6>
+                                            <p>No database, no login surface, and no hidden visitor tracking. The public site is served from GitHub Pages.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h6 class="card-title">C Programming Project</h6>
-                                                <p class="card-text text-muted">Coming soon</p>
-                                            </div>
+                                        <div class="signal-card">
+                                            <i class="bi-braces-asterisk"></i>
+                                            <h6>Read-only integrations</h6>
+                                            <p>Project and headline panels only call public APIs and RSS proxies from the browser. No secrets are stored in source.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <div class="card-body">
-                                                <h6 class="card-title">GitHub Website</h6>
-                                                <p class="card-text text-muted">Coming soon</p>
-                                            </div>
+                                        <div class="signal-card">
+                                            <i class="bi-shield-check"></i>
+                                            <h6>Safer defaults</h6>
+                                            <p>External links use isolated tabs, the page ships a CSP meta policy, and vulnerability contact details live in security.txt.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div id="contacts" class="row my-4">
+                    <!-- PROJECTS (live from GitHub) -->
+                    <section id="projects" class="row my-4">
                         <div class="col-12">
-                            <div class="custom-block bg-white">
-                                <h5 class="mb-3">Contacts</h5>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <p class="mb-1"><strong>Email:</strong> <a href="mailto:sebastian@example.com">sebastian@example.com</a></p>
-                                        <p class="mb-1"><strong>GitHub:</strong> <a href="https://github.com/sebasp-9" target="_blank" rel="noopener">github.com/sebasp-9</a></p>
-                                        <p class="mb-0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener">linkedin.com/in/sebastianparra0</a></p>
+                            <div class="custom-block">
+                                <div class="feed-head">
+                                    <div>
+                                        <span class="section-eyebrow">projects</span>
+                                        <h5 class="mb-0">Selected GitHub work</h5>
                                     </div>
-                                    <div class="col-md-6">
-                                        <form action="#" method="post" class>
+                                    <a href="https://github.com/sebasp-9?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost btn-sm d-inline-flex align-items-center">
+                                        <i class="bi-github me-2"></i> All repositories
+                                    </a>
+                                </div>
+                                <p class="feed-status mb-3">Verified against the public GitHub API on June 14, 2026. Cards keep refreshing from GitHub in the browser.</p>
+                                <div id="gh-projects" class="row g-3">
+                                    <!-- repo cards injected by scripts/portfolio.js -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- LIVE SECURITY NEWS -->
+                    <section id="news" class="row my-4">
+                        <div class="col-12">
+                            <div class="custom-block">
+                                <div class="feed-head">
+                                    <div>
+                                        <span class="section-eyebrow">threat intel</span>
+                                        <h5 class="mb-0"><span class="live-dot"></span>Live cybersecurity news</h5>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span id="news-status" class="feed-status">loading…</span>
+                                        <button id="news-refresh" type="button" class="btn-refresh" title="Refresh feed">
+                                            <i class="bi-arrow-clockwise"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="intel-sources" aria-label="Threat intelligence sources">
+                                    <span>CISA</span>
+                                    <span>The Hacker News</span>
+                                    <span>BleepingComputer</span>
+                                    <span>Krebs</span>
+                                </div>
+                                <div id="news-feed">
+                                    <!-- headlines injected by scripts/portfolio.js -->
+                                </div>
+                                <p class="feed-status mt-3 mb-0">Headlines are ranked by recency and security signal from public RSS sources.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CONTACT -->
+                    <section id="contacts" class="row my-4">
+                        <div class="col-12">
+                            <div class="custom-block">
+                                <span class="section-eyebrow">contact</span>
+                                <h5 class="mb-3">Let's connect</h5>
+                                <div class="row g-4">
+                                    <div class="col-md-5">
+                                        <p class="mb-3">The fastest way to reach me is LinkedIn. You can also find my code and projects on GitHub.</p>
+                                        <div class="d-flex flex-column gap-2">
+                                            <a class="btn btn-primary d-inline-flex align-items-center justify-content-center" href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener">
+                                                <i class="bi-linkedin me-2"></i> Connect on LinkedIn
+                                            </a>
+                                            <a class="btn btn-dark d-inline-flex align-items-center justify-content-center" href="https://github.com/sebasp-9" target="_blank" rel="noopener">
+                                                <i class="bi-github me-2"></i> Follow on GitHub
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <!--
+                                          To make this form deliver messages to your inbox (without exposing an
+                                          email on the page): create a free form at https://formspree.io, then
+                                          replace REPLACE_WITH_YOUR_ID below with your form id, e.g. action="https://formspree.io/f/abcdwxyz".
+                                          Until then, the form gently redirects visitors to LinkedIn.
+                                        -->
+                                        <form id="contact-form" class="custom-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="post" role="form">
                                             <div class="mb-2">
-                                                <input type="text" class="form-control" placeholder="Your name">
+                                                <input type="text" name="name" class="form-control" placeholder="Your name" required>
                                             </div>
                                             <div class="mb-2">
-                                                <input type="email" class="form-control" placeholder="Your email">
+                                                <input type="email" name="email" class="form-control" placeholder="Your email" required>
                                             </div>
                                             <div class="mb-2">
-                                                <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
+                                                <textarea name="message" class="form-control" rows="4" placeholder="Your message" required></textarea>
                                             </div>
-                                            <button type="submit" class="btn btn-outline-primary">Send</button>
+                                            <button type="submit" class="btn btn-outline-primary">Send message</button>
+                                            <p id="contact-note" class="feed-status mt-2 mb-0"></p>
                                         </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
                     <footer class="site-footer">
                         <div class="container">
                             <div class="row">
-                                
                                 <div class="col-lg-12 col-12">
-                                    <p class="copyright-text">© Sebastian Para</p>
+                                    <p class="copyright-text">© <span id="year">2026</span> Sebastian Para · sebastech.me · built &amp; hosted on GitHub Pages</p>
                                 </div>
-
                             </div>
                         </div>
                     </footer>
                 </main>
-
             </div>
         </div>
 
@@ -341,6 +299,56 @@ Bootstrap 5 Dashboard Admin Template
         <script src="scripts/jquery.min.js"></script>
         <script src="scripts/bootstrap.bundle.min.js"></script>
         <script src="scripts/custom.js"></script>
+        <script src="scripts/portfolio.js"></script>
+        <script>
+            // Contact form: use Formspree if configured, otherwise nudge to LinkedIn.
+            (function () {
+                var form = document.getElementById("contact-form");
+                if (!form) return;
+                var note = document.getElementById("contact-note");
+                var configured = form.action.indexOf("REPLACE_WITH_YOUR_ID") === -1;
 
+                form.addEventListener("submit", function (e) {
+                    if (!configured) {
+                        e.preventDefault();
+                        note.innerHTML = 'Direct messaging isn\'t wired up yet — ping me on ' +
+                            '<a href="https://www.linkedin.com/in/sebastianparra0" target="_blank" rel="noopener">LinkedIn</a> instead.';
+                        return;
+                    }
+                    e.preventDefault();
+                    var data = new FormData(form);
+                    note.textContent = "Sending…";
+                    fetch(form.action, { method: "POST", body: data, headers: { "Accept": "application/json" } })
+                        .then(function (r) {
+                            if (r.ok) { form.reset(); note.textContent = "Thanks — your message was sent."; }
+                            else { note.textContent = "Something went wrong. Please try LinkedIn."; }
+                        })
+                        .catch(function () { note.textContent = "Network error. Please try LinkedIn."; });
+                });
+            })();
+        </script>
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Sebastian Para",
+              "url": "https://sebastech.me",
+              "sameAs": [
+                "https://www.linkedin.com/in/sebastianparra0",
+                "https://github.com/sebasp-9"
+              ],
+              "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "TalTech"
+              },
+              "knowsAbout": [
+                "Cybersecurity",
+                "Network intrusion detection",
+                "Linux",
+                "Computer networking",
+                "C programming"
+              ]
+            }
+        </script>
     </body>
 </html>
