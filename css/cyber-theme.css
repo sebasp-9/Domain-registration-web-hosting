@@ -2,7 +2,7 @@
 
   cyber-theme.css
   Dark "security operations" theme layered on top of tooplate-mini-finance.css
-  Author: Sebastian Para — sebastech.me
+  Author: Sebastián Parra — sebastech.me
 
   Loaded AFTER the template CSS so these rules win without heavy !important use.
   Markup in this project avoids the Bootstrap .bg-white utility on panels, but a
