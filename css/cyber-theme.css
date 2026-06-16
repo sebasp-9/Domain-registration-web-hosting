@@ -23,9 +23,9 @@
   --text:            #c9d6e3;   /* body text              */
   --text-dim:        #8b9bb0;   /* muted text             */
   --heading:         #eef4fb;   /* headings               */
-  --accent:          #28e0a0;   /* primary neon (green)   */
-  --accent-2:        #38bdf8;   /* secondary (cyan)       */
-  --accent-3:        #a78bfa;   /* tertiary (violet)      */
+  --accent:          #4d9fff;   /* primary (blue)         */
+  --accent-2:        #79c0ff;   /* secondary (light blue) */
+  --accent-3:        #5a6b80;   /* tertiary (steel grey)  */
   --danger:          #ff5d6c;
   --warn:            #ffb347;
   --mono:            'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Code', Consolas, monospace;
@@ -95,7 +95,7 @@ p, ul li { color: var(--text); font-weight: 400; }
 a { color: var(--accent); }
 a:hover { color: var(--accent-2); }
 
-::selection { background: rgba(40,224,160,0.30); color: #fff; }
+::selection { background: rgba(77,159,255,0.30); color: #fff; }
 
 /* code / terminal accents */
 code, kbd, .mono { font-family: var(--mono); }
@@ -140,7 +140,7 @@ code, kbd, .mono { font-family: var(--mono); }
 .header-actions a:hover {
   color: var(--accent);
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(40,224,160,0.12);
+  box-shadow: 0 0 0 3px rgba(77,159,255,0.15);
   transform: translateY(-1px);
 }
 .header-actions .avatar { padding: 0; overflow: hidden; }
@@ -156,7 +156,7 @@ code, kbd, .mono { font-family: var(--mono); }
 .navbar .header-form .form-control:focus {
   background: var(--panel-2);
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(40,224,160,0.12);
+  box-shadow: 0 0 0 3px rgba(77,159,255,0.15);
 }
 
 /*---------------------------------------
@@ -182,8 +182,8 @@ code, kbd, .mono { font-family: var(--mono); }
 }
 .card:hover {
   transform: translateY(-3px);
-  border-color: rgba(40,224,160,0.45);
-  box-shadow: 0 10px 30px -12px rgba(0,0,0,0.7), 0 0 0 1px rgba(40,224,160,0.10);
+  border-color: rgba(77,159,255,0.45);
+  box-shadow: 0 10px 30px -12px rgba(0,0,0,0.7), 0 0 0 1px rgba(77,159,255,0.12);
 }
 .card-title { color: var(--heading); }
 .card-text { color: var(--text-dim); }
@@ -285,8 +285,8 @@ h1, h2, h3, h4, h5, h6 { color: var(--heading); }
 .repo-topic {
   font-family: var(--mono); font-size: 0.68rem;
   color: var(--accent-2);
-  background: rgba(56,189,248,0.10);
-  border: 1px solid rgba(56,189,248,0.25);
+  background: rgba(121,192,255,0.10);
+  border: 1px solid rgba(121,192,255,0.25);
   border-radius: 999px; padding: .12rem .55rem;
 }
 .project-badge {
@@ -296,9 +296,9 @@ h1, h2, h3, h4, h5, h6 { color: var(--heading); }
   width: fit-content;
   font-family: var(--mono);
   font-size: .68rem;
-  color: var(--warn);
-  background: rgba(255,179,71,0.10);
-  border: 1px solid rgba(255,179,71,0.25);
+  color: var(--accent-2);
+  background: rgba(121,192,255,0.10);
+  border: 1px solid rgba(121,192,255,0.25);
   border-radius: 999px;
   padding: .12rem .5rem;
   margin-bottom: .55rem;
@@ -337,14 +337,14 @@ h1, h2, h3, h4, h5, h6 { color: var(--heading); }
 }
 .live-dot {
   display: inline-block; width: 9px; height: 9px; border-radius: 50%;
-  background: var(--danger); margin-right: .4rem;
-  box-shadow: 0 0 0 0 rgba(255,93,108,0.6);
+  background: var(--accent); margin-right: .4rem;
+  box-shadow: 0 0 0 0 rgba(77,159,255,0.6);
   animation: pulse 1.8s infinite;
 }
 @keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(255,93,108,0.55); }
-  70%  { box-shadow: 0 0 0 8px rgba(255,93,108,0); }
-  100% { box-shadow: 0 0 0 0 rgba(255,93,108,0); }
+  0%   { box-shadow: 0 0 0 0 rgba(77,159,255,0.55); }
+  70%  { box-shadow: 0 0 0 8px rgba(77,159,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(77,159,255,0); }
 }
 .feed-status { font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim); }
 .btn-refresh {
@@ -367,15 +367,15 @@ h1, h2, h3, h4, h5, h6 { color: var(--heading); }
   font-family: var(--mono);
   font-size: .68rem;
   color: var(--accent-2);
-  background: rgba(56,189,248,0.09);
-  border: 1px solid rgba(56,189,248,0.22);
+  background: rgba(121,192,255,0.09);
+  border: 1px solid rgba(121,192,255,0.22);
   border-radius: 999px;
   padding: .12rem .5rem;
 }
 .threat-tag {
-  color: var(--danger);
-  background: rgba(255,93,108,0.09);
-  border-color: rgba(255,93,108,0.25);
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.04);
+  border-color: var(--border);
   margin-left: .35rem;
 }
 
@@ -467,7 +467,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--heading); }
   SEARCH HIGHLIGHT (from custom.js)
 -----------------------------------------*/
 span.search-highlight {
-  background: rgba(255,179,71,0.30);
+  background: rgba(77,159,255,0.30);
   color: var(--heading);
   border-radius: 3px;
   padding: 0 2px;
