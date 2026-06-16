@@ -299,7 +299,9 @@
   }
 
   function fetchViaRss2Json(feed) {
-    var api = "https://api.rss2json.com/v1/api.json?count=9&rss_url=" + encodeURIComponent(feed.url);
+    // NOTE: the `count` parameter requires a paid rss2json API key — omit it
+    // (the free endpoint returns ~10 items, which we merge and slice in JS).
+    var api = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed.url);
     return fetch(api)
       .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
       .then(function (data) {
